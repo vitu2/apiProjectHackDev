@@ -17,7 +17,7 @@ server.use("/", require("./router/customersRouter"));
 server.use("/", require("./router/addressRouter"));
 server.use("/", require("./router/pedidosRouter"));
 server.use("/", require("./router/orderDetailsRouter"));
-server.use("/", require("./router/smsRouter"))
+// server.use("/", require("./router/smsRouter"))
 
 server.get("/test", (req, res) => {
   res.send("Hello World!");
