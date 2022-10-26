@@ -4,7 +4,7 @@ require("dotenv").config({
 
 const express = require("express");
 const server = express();
-const port = 443;
+const port = 3000;
 const cors = require("cors");
 
 
