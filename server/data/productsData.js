@@ -51,13 +51,6 @@ exports.getProductsFilter = function (type) {
       ON product_types.product_id = products.product_id 
       INNER JOIN types 
       ON product_types.type_id = types.type_id 
-      INNER JOIN product_colors
-      ON product_colors.product_id = products.product_id
-      INNER JOIN colors
-      ON colors.color_id = product_colors.color_id
-      WHERE types.type = '${type}' 
-      OR products.trademark = '${type}' 
-      OR products.name = '${type}' 
-      OR colors.color = '${type}'`
+      WHERE types.type = '${type}'`
   );
 };
